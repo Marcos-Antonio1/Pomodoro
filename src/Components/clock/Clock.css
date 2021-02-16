@@ -1,0 +1,66 @@
+    .container-clock{
+    display: flex;
+    flex-direction: column;
+}
+.botoes{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.bt{
+    margin-left: 10px;
+    width: 200px;
+    height: 40px;
+    border: white;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #FF855C;
+    cursor: pointer;
+}
+.bt:focus{
+    outline-style: none;
+    background-color: tomato;
+  }
+.clock-area{
+    display: flex;
+    flex-direction: column;
+}
+.clock{
+    display: flex;
+    justify-content: center;
+}
+.clock p {
+    font-size: 100px;
+    color: #FFBF5C;
+    font-weight: bold;
+}
+
+.bottoes-controle{
+    display: flex;
+    justify-content: center ;
+    margin-top: -20px;
+}
+.bt-iniciar{
+    width: 120px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: #0DFAA7;
+    border: none;
+    border-radius: 5px;
+}
+.bt-parar{
+    width: 120px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: #FF675C;
+    border: none;
+    border-radius: 5px;
+}
+.bt-reset{
+    width: 120px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: #FFBF5C;
+    border: none;
+    border-radius: 5px;
+}
