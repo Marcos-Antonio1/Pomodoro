@@ -5,6 +5,9 @@
 
 ## Instalação 
   1. npm i
+ 
+## Run 
+  1. npm start
 
 ## Funcionalidade 
   - [x] Iniciar contagem
