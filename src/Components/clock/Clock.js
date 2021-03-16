@@ -1,23 +1,30 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Clock.css'
-
+import song from './finish.mp3';
 function Clock(){
-    const [atualTempo,setAtualTempo] =React.useState(25)
-    function iniciarContagem(){
-    }
-    function pararContagem(){
+    //times default
+    const[tempoPomodoro,setTempoPomodoro]=React.useState()
+    const [pausaCurta,setPauseCurta]=React.useState(5)
+    const [pausaLonga,setPauseLonga]=React.useState(10)
+    // variáveis de controle
+    const[contagemAtiva,setContagemAtiva]=React.useState()
 
+    const finish= new Audio(song);
+    function start(){
+        if (contagemAtiva === false)
+            setContagemAtiva(true)
+        else
+            setContagemAtiva(false)
     }
-    function resetarContagem(){
-
+    function cronometro(){
+        setInterval(()=>{
+            setTempoPomodoro(tempoPomodoro-1)
+            console.log(tempoPomodoro)
+        },1000)
     }
-    function paradaCurta(){
-
-    }
-    function ParadaLonga(){
-
-    }
-
+    useEffect(()=>{
+        cronometro()
+    },[contagemAtiva])
     return(
         <div className="container-clock">
             <div className="botoes">
@@ -27,16 +34,18 @@ function Clock(){
             </div>
             <div className="clock-area">
                 <div className="clock">
-                    <p>{atualTempo}:00</p>
+                    <p> {tempoPomodoro}:00</p>
                 </div>
                 <div className="bottoes-controle">
-                    <button onClick={e => iniciarContagem()} className="bt-iniciar">Começar </button>
+                    <button  className="bt-iniciar" onClick={()=>start()}>Começar </button>
                     <button className="bt-parar" >Parar</button>
                     <button className="bt-reset" >Reset</button>
                 </div>
             </div>
         </div>
     )
+    
+    
 }
 
 export default Clock;
