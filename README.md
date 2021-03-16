@@ -1,17 +1,23 @@
-# Getting Started with Create React App
+# Ferramenta pomodoro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<p align="center">Ferramenta de Gestão de tempo para diversas tarefas</p>
 
-In the project directory, you can run:
+## Instalação 
+  1. npm i
 
-### `yarn start`
+## Funcionalidade 
+  - [x] Iniciar contagem
+  - [ ] Parar o tempo
+  - [ ] Resetaro tempo 
+  - [ ] Parada curta
+  - [ ] parada Longa 
+  - [ ] Configurar o tempo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 🛠 Tecnologias
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+As seguintes ferramentas foram usadas na construção do projeto:
+  - React js 
+
 
 
